@@ -36,6 +36,5 @@ public class Intent {
     private String description;
 
     @OneToMany(mappedBy = "intent", cascade = CascadeType.ALL, orphanRemoval = true)
-    
     private Set<IntentTag> intentTags = new HashSet<>();
 }
